@@ -13,6 +13,7 @@ In this repo I put together a simple fullstack development project using:
   - Check installation `ng version`
   - Build and run app `ng serve`
   - To create a component `ng generate component NAME` or `ng g c NAME`
+  - To create services `ng generate service NAME` or `ng g s NAME`. It's better to have `ng generate service service/NAME`
 
 
 ## Lessons and take-aways
@@ -20,6 +21,8 @@ In this repo I put together a simple fullstack development project using:
 -  `LINT` is a tool that analyzes source code to flag programming errors, bugs, stylistic errors, and suspicious constructs. To run the tool type `ng lint`
 - `DIST` is the only folder you need to deploy your code. Take that folder, put it in a web server to run the app, and that's it. To generate it, run `ng build`.
 - `e2e testing` is a testing methodology that simulates real-user scenarios and validates the system under test entirely (taking in count the integrity of its components and data). To run e2e tests type `ng e2e`.
+- A `Module` is a group of components and/or directives that is dedicated to a specific purpose.
+- Use `routerLink` rather than `href`. `routerLink` just routes the part of the page that should change. `href` refreshes the whole site.
 
 
 ## Dictionary
