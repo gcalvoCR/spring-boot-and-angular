@@ -24,7 +24,11 @@ In this repo I put together a fullstack development project using:
 
 
 ## Dictionary
- - Interpolation - {{ data }}
+ - Interpolation - `{{ data }}`
+ - Event binding - `(click)=handleAction()`
+ - 2way binding - `[(ngModel)]="property"` *banana in a box*
+ - Angular directives - Additional attributes on top in HTML, i.e. `ngModel`
+ - Angular directive --> `*ngIf="property"` 
 
 
 ### Useful links for examples
