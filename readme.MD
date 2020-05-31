@@ -1,6 +1,6 @@
 # spring-boot-and-angular
 
-In this repo I put together a fullstack development project using:
+In this repo I put together a simple fullstack development project using:
 
 1. Angular for the front-end.
 2. Spring Boot for the back-end.
@@ -18,9 +18,8 @@ In this repo I put together a fullstack development project using:
 ## Lessons and take-aways
 
 -  `LINT` is a tool that analyzes source code to flag programming errors, bugs, stylistic errors, and suspicious constructs. To run the tool type `ng lint`
-- `DIST` is the only folder you need to deploy your code. Take that folder, put it in a web server to run the app, and that's it. To generate it run `ng build`.
-- `e2e testing` is a testing methodology that simulate the real user scenario and validate the system under test and its components for integration and data integrity. To run e2e tests type `ng e2e`.
-
+- `DIST` is the only folder you need to deploy your code. Take that folder, put it in a web server to run the app, and that's it. To generate it, run `ng build`.
+- `e2e testing` is a testing methodology that simulates real-user scenarios and validates the system under test entirely (taking in count the integrity of its components and data). To run e2e tests type `ng e2e`.
 
 
 ## Dictionary
