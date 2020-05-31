@@ -25,9 +25,22 @@ In this repo I put together a simple fullstack development project using:
 ## Dictionary
  - Interpolation - `{{ data }}`
  - Event binding - `(click)=handleAction()`
- - 2way binding - `[(ngModel)]="property"` *banana in a box*
- - Angular directives - Additional attributes on top in HTML, i.e. `ngModel`
- - Angular directive --> `*ngIf="property"` 
+
+ - Angular directives - Additional attributes on top of HTML, i.e. `ngModel`
+    -  `[(ngModel)]="property"` *banana in a box* - 2way binding
+    -  `*ngIf="property"` for condidionals
+    -  `*ngFor="let property of arrayProperty"` for loops
+
+ - ActivatedRoute --> Object that has the info of the active route
+
+ - Routing directives - Additional attribute on top  of HTML related to routing
+    -  `<a> routerLink="/ROUTE" </a>` redirects to /ROUTE
+
+ - Pipes are ways to format data
+    - `date` formats date from `Sun May 31 2020 10:07:29 GMT-0600 (Central Standard Time)` to `May 31, 2020`
+    - `uppercase`
+    - `lowercase`
+
 
 
 ### Useful links for examples

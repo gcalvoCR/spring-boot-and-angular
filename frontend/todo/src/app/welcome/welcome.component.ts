@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
 
 
 //decorator
@@ -11,11 +12,15 @@ export class WelcomeComponent implements OnInit {
 
   //member variable
   message = 'Welcome message'
+  name: string = ''
 
-  constructor() { }
+  //ActivatedRoute
+  constructor(private route: ActivatedRoute) { 
+
+  }
 
   ngOnInit(): void {
-    console.log(this.message);
+    this.name = this.route.snapshot.params['name']
   }
 
 }
