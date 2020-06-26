@@ -8,9 +8,21 @@ export class HardcodedAuthenticationService {
   constructor() { }
 
   authenticate(username, password){
-    let valid = false;
-    (username==='Gabriel' && password==='admin') ? valid = true : valid = false;
-    return valid;
+    if(username==='Gabriel' && password==='admin') {
+      sessionStorage.setItem('authenticatedUser', username);
+      return true;
+    }
+    return false;
+      
+  }
+
+  isUserLoggedIn(){
+    let user = sessionStorage.getItem('authenticatedUser');
+    return !(user===null);
+  }
+
+  logout(){
+    let user = sessionStorage.removeItem('authenticatedUser');
   }
 
 }
