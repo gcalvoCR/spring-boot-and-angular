@@ -31,12 +31,24 @@ export class WelcomeComponent implements OnInit {
 
   getWelcomeMessage(){
     this.service.executeHelloWorldService().subscribe(
-      response => this.handleSuccessfulResponse(response)
+      response => this.handleSuccessfulResponse(response),
+      error =>this.handleErrorResponse(error)
+    );
+  }
+
+  getWelcomeMessageWithParam(){
+    this.service.executeHelloWorldServiceWithPathVariable(this.name).subscribe(
+      response => this.handleSuccessfulResponse(response),
+      error =>this.handleErrorResponse(error)
     );
   }
 
   handleSuccessfulResponse(response){
     this.welcomeMessageFromService = response.message
+  }
+
+  handleErrorResponse(error){
+    this.welcomeMessageFromService = error.error.message
   }
 
 }

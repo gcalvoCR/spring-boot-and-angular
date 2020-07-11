@@ -22,11 +22,13 @@ public class HelloWorldController {
 	
 	@GetMapping("/hello-world-bean")
 	public HelloWorldBean helloWorldBean() {
+		//throw new RuntimeException("An error happened! ");
 		return new HelloWorldBean("Hello macarena");
 	}
 	
 	@GetMapping("/hello-world/path-variable/{name}")
 	public HelloWorldBean helloWorldBeanPathVariable(@PathVariable String name) {
+		//throw new RuntimeException("An error happened! ");
 		return new HelloWorldBean(String.format("Hello world, %s", name));
 	}
 
